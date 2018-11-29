@@ -140,7 +140,7 @@ table {
 }
 
 
-/* ====== NAVBAR ====== */
+ ====== NAVBAR ====== 
 
 #navbar {
     position: relative;
@@ -182,7 +182,6 @@ table {
     text-align: center;
 }
 
-/*
  ====== FOOTER ====== 
 
 
@@ -209,38 +208,44 @@ table {
     background: #125688;
     color: white;
 }
-*/
 
 
-@media (min-device-width: 375px) and (max-width: 600px) {
+/* =============== Iphone X view ================ */
+
+@media only screen and (min-width: 600px) {
+    
+    #logo {
+        display: flex;
+        position: relative;
+        align-items: center;
+        left: 3rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    #logo .logo {
+        font-size: 3rem;
+        text-align: left;
+        font-weight: bold;
+    }
+    
     #navbar {
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content:;
         top: 1rem;
     }
 
     #navbar > li > a {
         text-decoration: none;
-        font-size: 1rem;
-        padding: .7rem;
+        font-size: 1.1rem;
+        padding: .2rem .6rem;
+        margin: .2rem;
         color: white;
+/*        border: solid 1px white;*/
     }
-
-    #logo {
-        display: flex;
-        position: relative;
-        align-items: center;
-        left: 1rem;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #logo .logo {
-        font-size: 2rem;
-        text-align: center;
-        font-weight: bold;
-    }
+    
 
     /* ====== FOOTER ====== */
     #footer {
